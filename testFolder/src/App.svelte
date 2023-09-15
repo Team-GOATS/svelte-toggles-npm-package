@@ -1,43 +1,28 @@
 <script>
-  import Counter from './lib/Counter.svelte'
 
-  import SimpleToggle from 'C:/Users/admin/Documents/GitHub/teamgoats-npm-package/package/src/simpleToggle.svelte'
+  import SimpleToggle from 'C:/Users/admin/Documents/GitHub/teamgoats-npm-package/package/src/simpleToggle'
+
+  import SlideToggle from 'C:/Users/admin/Documents/GitHub/teamgoats-npm-package/package/src/slideToggle'
 </script>
 
 <main>
   <div>
 
+  </div>
+  <h1>Svelte Toggles Examples</h1>
+  
+  <div class="card">
+    <h3>simpleToggle Import</h3>
     <SimpleToggle/>
   </div>
-  <h1>Vite + Svelte</h1>
-
   <div class="card">
-    <Counter />
+    <h3>slideToggle Import</h3>
+    <SlideToggle/>
   </div>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
+
 </style>
