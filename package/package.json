@@ -1,0 +1,27 @@
+{
+  "name": "svelte-toggles",
+  "version": "1.0.0",
+  "description": "svelte-toggles npm package",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "svelte": "src/index.js",
+  "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Team-GOATS/teamgoats-npm-package.git)"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "author": "Team GOATS",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^3.29.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^7.1.6",
+    "svelte": "^4.2.0"
+  }
+}
