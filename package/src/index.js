@@ -1,3 +1,3 @@
 import simpleToggle from './simpleToggle.svelte';
     
-export default Name;
+export default simpleToggle;
