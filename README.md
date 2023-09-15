@@ -19,3 +19,10 @@ import SimpleToggle from 'svelte-toggles/src/simpleToggle.svelte'
 ```svelte
 <SimpleToggle/>
 ```
+## Properties
+### size
+You can select from; small, medium or large
+_Example use below:_
+```svelte
+<SimpleToggle size="small"/>
+```
