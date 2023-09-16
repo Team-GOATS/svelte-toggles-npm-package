@@ -1,5 +1,8 @@
 # Team Goats Svelte Toggles UI Library
 
+Team GOATS from Holmesglens Svelte Toggles back-end is done for you, check your local storage for Light value (Dark is default so wont initially show).
+
+
 To install and set up the library, run:
 
 ```sh
