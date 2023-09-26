@@ -1,4 +1,4 @@
-import simpleToggle from './simpleToggle.svelte'
+import simpleToggle from '../simpleToggle'
 
 export default {
     component: simpleToggle,
