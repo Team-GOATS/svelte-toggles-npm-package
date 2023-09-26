@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="toggle4" clip-path="url(#clip0_51_46)">
+<g id="light">
+<circle id="light1" cx="100.5" cy="99.5" r="62.5" fill="#D9D9D9"/>
+<circle id="light2" cx="15" cy="100" r="15" fill="#D9D9D9"/>
+<circle id="light3" cx="185" cy="100" r="15" fill="#D9D9D9"/>
+<circle id="light4" cx="100" cy="185" r="15" fill="#D9D9D9"/>
+<circle id="light5" cx="160" cy="40" r="15" fill="#D9D9D9"/>
+<circle id="light6" cx="40" cy="40" r="15" fill="#D9D9D9"/>
+<circle id="light7" cx="40" cy="160" r="15" fill="#D9D9D9"/>
+<circle id="light8" cx="160" cy="160" r="15" fill="#D9D9D9"/>
+<circle id="light9" cx="100" cy="15" r="15" fill="#D9D9D9"/>
+</g>
+<circle id="dark" cx="100" cy="100" r="65" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_51_46">
+<rect width="200" height="200" fill="white"/>
+</clipPath>
+</defs>
+</svg>

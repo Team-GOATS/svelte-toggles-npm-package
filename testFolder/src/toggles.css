@@ -1,0 +1,130 @@
+/* Custom properties for SVG fill property */
+:root {
+  /* This custom property should correlate with the app.css background colour */
+  --bg: #242424;
+
+  /* Represents the colour of our sun */
+  --light: #fff;
+    /* Represents the colour of our moon */
+  --dark: #000;
+}
+
+/* Custom properties for dark and light SVG fill properties */
+#dark {
+  fill: var(--dark);
+}
+#light {
+  fill: var(--light);
+}
+#bg1 {
+  fill: var(--bg);
+}
+#bg2 {
+  fill: var(--bg);
+}
+
+/* Toggle 1 */
+
+/* When light mode is on, show dark button and set light's opacity to 0 */
+/* #toggle1 #light {
+  opacity: 0;
+} */
+/* Click on DARK */
+#toggle1 #dark {
+  transition: all 1s linear;
+}
+/* bg2 moves offscreen as you click on dark SVG */
+#toggle1 #bg2 {
+  transition: transform 1s linear;
+}
+svg:hover #toggle1 #bg2 {
+  transform: translate(40%, -40%);
+}
+/* And the dark SVG disappears */
+svg:hover #toggle1 #dark {
+  opacity: 0;
+}
+
+/* Toggle 2: Slide in/out */
+
+#toggle2 #dark {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* #toggle2 #light,
+#toggle2 #dark */
+
+.transition {
+  transition: all 1s ease;
+}
+.translateDark {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+.translateLight {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+/* svg:hover #toggle2 #dark {
+  transform: translateX(0%);
+  opacity: 1;
+} */
+
+/* Toggle 3 */
+#toggle3 #light {
+  transition: all 1s ease;
+}
+svg:hover #toggle3 #light {
+  transform: translateX(100%);
+}
+
+/* #toggle3 #dark {
+  transition: all 1s ease;
+}
+svg:hover #toggle3 #light {
+  transform: translateX(0%);
+} */
+
+
+/* Toggle 4 */
+svg:hover #toggle4 #dark {
+  transition: all 1s ease;
+  /* opacity: 0; */
+}
+
+svg:hover #toggle4 #light {
+  transition: transform 1s ease;
+  /* opacity: 0; */
+}
+
+svg:hover #toggle4 #light #light2 {
+  transform: translateX(20%);
+}
+
+svg:hover #toggle4 #light #light3 {
+  transform: translateX(-20%);
+}
+
+svg:hover #toggle4 #light #light4 {
+  transform: translateY(-20%);
+}
+
+svg:hover #toggle4 #light #light5 {
+  transform: translate(-15%, 15%);
+}
+
+svg:hover #toggle4 #light #light6 {
+  transform: translate(15%, 15%);
+}
+
+svg:hover #toggle4 #light #light7 {
+  transform: translate(15%, -15%);
+}
+
+svg:hover #toggle4 #light #light8 {
+  transform: translate(-15%, -15%);
+}
+
+svg:hover #toggle4 #light #light9 {
+  transform: translateY(20%);
+}
