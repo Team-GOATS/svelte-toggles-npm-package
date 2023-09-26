@@ -6,8 +6,10 @@
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
   "scripts": {
-      "build": "rollup -c",
-      "dev": "rollup -c -w"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,19 @@
   "author": "Team GOATS",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.5",
+    "@storybook/addon-interactions": "^7.4.5",
+    "@storybook/addon-links": "^7.4.5",
+    "@storybook/blocks": "^7.4.5",
+    "@storybook/svelte": "^7.4.5",
+    "@storybook/svelte-vite": "^7.4.5",
+    "@storybook/testing-library": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^3.29.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^7.1.6",
+    "storybook": "^7.4.5",
     "svelte": "^4.2.0"
   }
 }

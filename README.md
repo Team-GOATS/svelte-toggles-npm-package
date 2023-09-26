@@ -3,13 +3,13 @@
 To install and set up the library, run:
 
 ```sh
-$ npm i svelte-toggles
+npm i svelte-toggles
 ```
 
 Or if you prefer using Yarn:
 
 ```sh
-$ yarn add svelte-toggles
+yarn add svelte-toggles
 ```
 
 Import our Toggle like this (For Example);
@@ -21,7 +21,7 @@ import SimpleToggle from 'svelte-toggles/src/simpleToggle'
 ```
 ## Properties
 ### size
-You can select from; small, medium or large
+You can select from; small, medium or large (Default: medium)
 
 _Example use below:_
 ```svelte
