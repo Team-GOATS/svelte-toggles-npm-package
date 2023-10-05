@@ -78,7 +78,7 @@
    
    <style>
    button {
-       border-radius: 20px;
+       border-radius: 10px;
        padding: 0.5em;
    }
    button:hover {
@@ -107,11 +107,11 @@
      padding: 6px 6px;
    }
    .toggle-button--medium {
-     font-size: 14px;
+     font-size: 16px;
      padding: 8px 14px;
    }
    .toggle-button--large {
-     font-size: 16px;
+     font-size: 18px;
      padding: 12px 24px;
    }
    

@@ -1,5 +1,6 @@
 <script>
-    import { onMount } from "svelte";
+
+import { onMount } from "svelte";
     const STORAGE_KEY = "theme";
     const DARK_PREFERENCE = "(prefers-color-scheme: dark)";
   
@@ -46,57 +47,33 @@
       window.matchMedia(DARK_PREFERENCE).addEventListener("change", applyTheme);
     });
 
-
-      /**
-   * @type {'small' | 'medium' | 'large'} How large should the button be?
-   */
-  export let size = 'medium';
-  
-  </script>
-  
-  <main>
+</script>
+<!-- ------------------------------ -->
+<main>
 
 
+    <div>
+        <button         
+            checked={currentTheme !== THEMES.LIGHT}
+            on:click={toggleTheme}
+        >
+
+            {#if currentTheme === "light"}
+              <!-- Try adding LIGHT SVG's here -->
+            <img alt="light" src="https://placehold.co/100x100?text=in+light"/>
+
+            {:else if currentTheme === "dark"}
+              <!-- And DARK here -->
+            <img alt="dark" src="https://placehold.co/100x100?text=in+dark"/>
+
+            {/if}
+
+        </button>
+      </div>
 
 
-    <label class="themeToggle" title="Toggle Theme">
-      <input
-        type="checkbox"
-        class={["svelte-toggle", `svelte-toggle--${size}`, ].join(' ')}
-      
-        checked={currentTheme !== THEMES.LIGHT}
-        on:click={toggleTheme}
-      />
-      <span class="theme-toggle-sr">Toggle theme</span>
-    </label>
+</main>
+<!-- -------------------------------- -->
+<style>
 
-
-  </main>
-
-  <style>
-   
-    span {
-      display: none;
-    }
-
-    .svelte-toggle {
-        cursor: pointer;
-    }
-
-/* --------- Sizes --------- */
-.svelte-toggle--small {
-    height: 15;
-    width: 15px;
-    margin: 5px;
-}
-.svelte-toggle--medium {
-    height: 25px;
-    width: 25px;
-    margin: 5px;
-}
-.svelte-toggle--large {
-    height: 35px;
-    width: 35px;
-    margin: 5px;
-}
-  </style>
+</style>
