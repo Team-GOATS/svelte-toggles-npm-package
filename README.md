@@ -15,6 +15,8 @@ Check your Local Storage for your Light value.
 |Checkbox      | svelte-toggles/src/Checkbox          | Literally just a checkbox  |
 |Basic              | In Development                         | Sun Turns into Moon         |
 |Eclipse           | svelte-toggles/src/Eclipse          | Sun Slides over Moon     |
+|Expand          | svelte-toggles/src/Expand         | Sun "dims" behind Moon |
+|Slide              | svelte-toggles-/src/Slide            | Sun slide off as Moon appears |
 
 To install and set up the library, run:
 
