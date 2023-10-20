@@ -12,7 +12,7 @@ Check your Local Storage for your Light value.
 
 | Name                         | Import Statement         | Description |
 -------------------------|--------------------------|---------------|
-|Checkbox      | svelte-toggles/src/Eclipse          | Literally just a checkbox  |
+|Checkbox      | svelte-toggles/src/Checkbox          | Literally just a checkbox  |
 |Basic              | In Development                         | Sun Turns into Moon         |
 |Eclipse           | svelte-toggles/src/Eclipse          | Sun Slides over Moon     |
 
