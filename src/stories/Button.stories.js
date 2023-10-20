@@ -1,8 +1,8 @@
-import buttonToggle from '../buttonToggle'
+import Button from '../Button'
 
 
 export default {
-    component: buttonToggle,
+    component: Button,
     tags: ['autodocs'],
     args: {
         label: "button"
@@ -19,6 +19,6 @@ export default {
     }
 };
 export const Primary = {
-    Component: buttonToggle,
+    Component: Button,
 
 }

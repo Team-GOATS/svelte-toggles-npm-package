@@ -1,7 +1,7 @@
-import simpleToggle from '../simpleToggle'
+import Checkbox from '../Checkbox'
 
 export default {
-    component: simpleToggle,
+    component: Checkbox,
     tags: ['autodocs'],
     argTypes: {
         size: {
