@@ -12,8 +12,8 @@ Check your Local Storage for your Light value.
 
 | Name                         | Import Statement         | Description |
 -------------------------|--------------------------|---------------|
-|Checkbox      | svelte-toggles/src/Checkbox          | Literally just a checkbox  |
-|Basic              | In Development                         | Sun Turns into Moon         |
+|Checkbox      | svelte-toggles/src/Checkbox          | **Literally** just a checkbox  |
+|Basic              | _**In Development**_                       | Sun Turns into Moon         |
 |Eclipse           | svelte-toggles/src/Eclipse          | Sun Slides over Moon     |
 |Expand          | svelte-toggles/src/Expand         | Sun "dims" behind Moon |
 |Slide              | svelte-toggles-/src/Slide            | Sun slide off as Moon appears |
@@ -31,10 +31,10 @@ yarn add svelte-toggles
 ```
 
 Import our Toggle like this (For Example);
-```svelte
+```js
 import Eclipse from 'svelte-toggles/src/Eclipse'
 ```
-```svelte
+```js
 <Eclipse/>
 ```
 # Properties (COMING SOON)
@@ -44,7 +44,7 @@ You can select from; small, medium or large (Default: medium)
 
 _Example use below:_
 ```js
-<Eclipse size="small"/>
+<Eclipse size="example"/>
 ```
 ### [+] fill
 You can select from; 
