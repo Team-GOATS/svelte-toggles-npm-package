@@ -29,10 +29,10 @@ yarn add svelte-toggles
 ```
 
 Import our Toggle like this (For Example);
-```js
+```svelte
 import Eclipse from 'svelte-toggles/src/Eclipse'
 ```
-```js
+```svelte
 <Eclipse/>
 ```
 # Properties (COMING SOON)
