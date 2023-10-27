@@ -1,22 +1,17 @@
 <script>
-
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
   const STORAGE_KEY = "theme";
   const DARK_PREFERENCE = "(prefers-color-scheme: dark)";
-  import anime from 'animejs/lib/anime.es.js';
+  import anime from 'animejs';
 
-    const moonPath = "M21.5 50C21.5 77.6142 50 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0C50 0 21.5 22.3858 21.5 50Z"
+  const moonPath = "M21.5 50C21.5 77.6142 50 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0C50 0 21.5 22.3858 21.5 50Z"
 
-    const sunPath = "M100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0C77.6142 0 100 22.3858 100 50Z"
-
-    const darkMode = document.querySelector('#darkMode')
-
-    let toggle = false;
+  const sunPath = "M100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0C77.6142 0 100 22.3858 100 50Z"
 
   const THEMES = {
-    DARK: "dark",
-    LIGHT: "light",
-  };
+      DARK: "dark",
+      LIGHT: "light",
+    };
 
   const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
 
@@ -47,12 +42,7 @@ import { onMount } from "svelte";
     window.matchMedia(DARK_PREFERENCE).addEventListener("change", applyTheme);
   });
 
-  
-
   function toggleAnimation(currentTheme) {
-
-    // Clickable sun
-    
         // Use anime.js
         const timeline = anime.timeline({
             duration: 750,
@@ -63,15 +53,13 @@ import { onMount } from "svelte";
             targets: ".sun",
             d: [ { value: currentTheme === THEMES.DARK ? sunPath : moonPath } ]
         });
-
-
     }
 
 </script>
 
 <main>
+  
     <section>
-        <h1>Dark Mode</h1>
         <button checked={currentTheme !== THEMES.LIGHT} on:click={toggleTheme}>
             <svg
                 id="darkMode" 
@@ -87,27 +75,10 @@ import { onMount } from "svelte";
                 fill="#FACB26"/>
             </svg>
         </button>
-
     </section> 
 
 </main>
-
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    section {
-        height: 100vh;
-        background: rgb(199, 199, 199);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-    }
-
     svg {
         cursor: pointer;
     }
