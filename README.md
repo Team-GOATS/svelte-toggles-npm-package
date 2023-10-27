@@ -54,8 +54,8 @@ import Basic from 'svelte-toggles/src/Basic'
 
 <Basic/>
 ```
-# Properties (COMING SOON)
-**Properties are in development**
+# Properties
+
 ### [+] size
 
 __Change the size of the toggle__
@@ -64,9 +64,9 @@ You can select from; small, medium or large (Default: medium)
 
 _Example use below:_
 ```js
-<Basic size="example"/>
+<Basic size="small"/>
 ```
-### [+] fill
+### [+] fill (Coming Soon)
 
 __Change the Colour of the Toggle__
 

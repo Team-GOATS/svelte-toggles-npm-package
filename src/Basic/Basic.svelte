@@ -55,19 +55,30 @@
         });
     }
 
+
+          /**
+   * @type {'small' | 'medium' | 'large'} How large should the button be?
+   */
+  export let size = 'medium';
+
 </script>
 
 <main>
   
     <section>
-        <button checked={currentTheme !== THEMES.LIGHT} on:click={toggleTheme}>
+        <button checked={currentTheme !== THEMES.LIGHT} on:click={toggleTheme}
+
+        >
             <svg
                 id="darkMode" 
                 width="100" 
                 height="100" 
                 viewBox="0 0 100 100" 
                 fill="none" 
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+                
+                class={["svelte-toggle", `svelte-toggle--${size}`, ].join(' ')}
+                >
                 
                 <path 
                 class="sun"
@@ -86,4 +97,21 @@
         background-color: transparent;
         border: none;
     }
+
+
+  .svelte-toggle--small {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+  }
+  .svelte-toggle--medium {
+      height: 25px;
+      width: 25px;
+      margin: 5px;
+  }
+  .svelte-toggle--large {
+      height: 35px;
+      width: 35px;
+      margin: 5px;
+  }
 </style>
