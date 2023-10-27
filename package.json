@@ -35,5 +35,8 @@
     "rollup-plugin-svelte": "^7.1.6",
     "storybook": "^7.4.5",
     "svelte": "^4.2.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
   }
 }

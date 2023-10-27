@@ -6,10 +6,10 @@
     <a href="https://github.com/Team-GOATS">Explore our <strong>GitHub »</strong></a>
     <br />
     <br />
-    <a href="https://sveltetoggles.onrender.com">View Demo Site</a>
+    <!-- <a href="https://sveltetoggles.onrender.com" disabled>View Demo Site</a>
     ·
     <a href="">Report Bug</a>
-    ·
+    · -->
   </p>
 
 Team GOATS from Holmesglen Svelte Toggles back-end functionality is done for you, no tedious research and bug fixing just for Light & Dark mode!
