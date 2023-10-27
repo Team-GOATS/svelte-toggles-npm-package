@@ -1,6 +1,6 @@
 {
   "name": "svelte-toggles",
-  "version": "1.1.2",
+  "version": "2.1.0",
   "description": "svelte-toggles npm package",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/Team-GOATS/teamgoats-npm-package.git"
   },
+  "homepage": "https://sveltetoggles.onrender.com",
   "keywords": [
     "svelte"
   ],
@@ -35,5 +36,8 @@
     "rollup-plugin-svelte": "^7.1.6",
     "storybook": "^7.4.5",
     "svelte": "^4.2.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
   }
 }

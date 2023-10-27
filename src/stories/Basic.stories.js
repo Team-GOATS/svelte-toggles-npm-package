@@ -1,7 +1,7 @@
-import Expand from '../Expand'
+import Basic from '../Basic'
 
 export default {
-    component: Expand,
+    component: Basic,
     tags: ['autodocs'],
     argTypes: {
 
