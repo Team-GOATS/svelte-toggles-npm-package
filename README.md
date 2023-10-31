@@ -4,11 +4,13 @@
     We stressed so you could relax!
     <br />
     <br />
-    <br />
-    <!-- <a href="https://sveltetoggles.onrender.com" disabled>View Demo Site</a>
+    <a href="https://sveltetoggles.onrender.com" disabled>View Demo Site</a>
     ·
     <a href="">Report Bug</a>
-    · -->
+    ·
+
+  <br/>
+
    <span style="color:red"><strong> We've just released Version 2.0.0 </strong></span>- with this we have cut back all of our Prototypes & will now only be adding Toggles you can happily use on your projects
   <br />
   <br />
@@ -60,19 +62,26 @@ import Basic from 'svelte-toggles/src/Basic'
 
 __Change the size of the toggle__
 
+__Type:__ String
+
 You can select from; small, medium or large (Default: medium)
 
 _Example use below:_
 ```js
 <Basic size="small"/>
 ```
-### [+] fill (Coming Soon)
+### [+] fill
 
 __Change the Colour of the Toggle__
 
-You can select from; 
+__Type:__ String
+
+You can select from; Any take HEX or RGBA code (Default: #FACB26)
 
 _Example use below:_
 ```js
-<Basic fill="example"/>
+<Basic fill="#FFFFFF"/>
+```
+```js
+<Basic fill="255, 255, 255"/>
 ```

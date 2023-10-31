@@ -7,6 +7,9 @@ export default {
       size: {
         options: ['small', 'medium', 'large'],
         control: { type: 'radio'}
+      },
+      fill: {
+        control: { type: 'color'}
       }
       },
   };
