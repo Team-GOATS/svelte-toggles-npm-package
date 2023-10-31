@@ -6,9 +6,10 @@
     <br />
     <a href="https://sveltetoggles.onrender.com" disabled>View Demo Site</a>
     ·
-    <a href="">Report Bug</a>
+    <a href="mailto:damonwindsor@gmail.com?subject=IMPORTANT Svelte-Toggles Bug Report">Report Bug</a>
     ·
 
+  <br/>
   <br/>
 
    <span style="color:red"><strong> We've just released Version 2.0.0 </strong></span>- with this we have cut back all of our Prototypes & will now only be adding Toggles you can happily use on your projects
