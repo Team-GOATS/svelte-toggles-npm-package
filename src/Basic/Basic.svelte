@@ -13,7 +13,7 @@
       LIGHT: "light",
     };
 
-  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
+  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE);
 
   let currentTheme;
   const applyTheme = () => {
@@ -21,11 +21,12 @@
     currentTheme = localStorage.getItem(STORAGE_KEY) ?? preferredTheme;
 
     if (currentTheme === THEMES.DARK) {
-      document.body.classList.remove(THEMES.LIGHT);
-      document.body.classList.add(THEMES.DARK);
-    } else {
       document.body.classList.remove(THEMES.DARK);
       document.body.classList.add(THEMES.LIGHT);
+
+    } else {
+      document.body.classList.remove(THEMES.LIGHT);
+      document.body.classList.add(THEMES.DARK);
     }
     toggleAnimation(currentTheme);
   };
