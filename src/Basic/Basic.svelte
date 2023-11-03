@@ -13,7 +13,7 @@
       LIGHT: "light",
     };
 
-  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
+  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE);
 
   let currentTheme;
   const applyTheme = () => {
@@ -21,11 +21,12 @@
     currentTheme = localStorage.getItem(STORAGE_KEY) ?? preferredTheme;
 
     if (currentTheme === THEMES.DARK) {
-      document.body.classList.remove(THEMES.LIGHT);
-      document.body.classList.add(THEMES.DARK);
-    } else {
       document.body.classList.remove(THEMES.DARK);
       document.body.classList.add(THEMES.LIGHT);
+
+    } else {
+      document.body.classList.remove(THEMES.LIGHT);
+      document.body.classList.add(THEMES.DARK);
     }
     toggleAnimation(currentTheme);
   };
@@ -61,6 +62,8 @@
    */
   export let size = 'medium';
 
+  export let fill = "#FACB26"
+
 </script>
 
 <main>
@@ -83,7 +86,7 @@
                 <path 
                 class="sun"
                 d="M100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0C77.6142 0 100 22.3858 100 50Z" 
-                fill="#FACB26"/>
+                fill={fill}/>
             </svg>
         </button>
     </section> 

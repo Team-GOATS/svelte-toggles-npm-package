@@ -1,7 +1,7 @@
-import Basic from '../Basic'
+import Simple from '../Simple'
 
 export default {
-    component: Basic,
+    component: Simple,
     tags: ['autodocs'],
     argTypes: {
       size: {

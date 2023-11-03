@@ -1,7 +1,7 @@
-import Basic from '../Basic'
+import Horizon from '../Horizon'
 
 export default {
-    component: Basic,
+    component: Horizon,
     tags: ['autodocs'],
     argTypes: {
       size: {
