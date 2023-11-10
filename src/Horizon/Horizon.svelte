@@ -50,8 +50,8 @@
             });
             timeline.add({
             targets: ".sun",
-            translateY: currentTheme === THEMES.DARK ? 0 : 40,
-            d: [ { value: currentTheme === THEMES.DARK ? sunPath : moonPath } ]
+            translateY: currentTheme === THEMES.DARK ? 40 : 0,
+            d: [ { value: currentTheme === THEMES.DARK ? moonPath : sunPath } ]
           });
       }
   
@@ -81,7 +81,7 @@
                   class={["svelte-toggle", `svelte-toggle--${size}`, ].join(' ')}
                   >
                   
-                  <path d="M0 90C0 88.3431 1.34315 87 3 87H97C98.6569 87 100 88.3431 100 90C100 91.6569 98.6569 93 97 93H3C1.34314 93 0 91.6569 0 90Z" fill="#EAD300"/>
+                <path d="M0 90C0 88.3431 1.34315 87 3 87H97C98.6569 87 100 88.3431 100 90C100 91.6569 98.6569 93 97 93H3C1.34314 93 0 91.6569 0 90Z" fill={fill}/>
 
                   <path 
                   class="sun"

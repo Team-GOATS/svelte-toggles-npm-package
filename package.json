@@ -1,6 +1,6 @@
 {
   "name": "svelte-toggles",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Light & Dark Mode Toggle Switches for Svelte",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

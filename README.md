@@ -53,7 +53,7 @@
 ## Get Started
 
 
-Check your Local Storage for your Light value.
+Check your Local Storage for your Light value when the Sun is visible
 
 **To install and set up the library, run:**
 
