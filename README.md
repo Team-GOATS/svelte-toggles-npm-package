@@ -6,7 +6,7 @@
     <br />
     <a href="https://sveltetoggles.onrender.com" disabled>View Demo Site</a>
     ·
-    <a href="mailto:damonwindsor@gmail.com?subject=IMPORTANT Svelte-Toggles Bug Report">Report Bug</a>
+    <a href="https://github.com/Team-GOATS/svelte-toggles-npm-package/issues">Report Bug</a>
     ·
 
   <br/>
@@ -53,7 +53,7 @@
 ## Get Started
 
 
-Check your Local Storage for your Light value.
+Check your Local Storage for your Light value when the Sun is visible
 
 **To install and set up the library, run:**
 

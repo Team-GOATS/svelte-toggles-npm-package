@@ -51,7 +51,7 @@ const THEMES = {
     });
     timeline.add({
     targets: ".sun",
-    d: [{value: currentTheme === THEMES.DARK ? sunPath : moonPath}],
+    d: [{value: currentTheme === THEMES.DARK ? moonPath : sunPath}],
     direction: "alternate",
   })
 

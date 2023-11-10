@@ -52,10 +52,9 @@
         // Add animations to timeline
         timeline.add({
             targets: ".sun",
-            d: [ { value: currentTheme === THEMES.DARK ? sunPath : moonPath } ]
+            d: [ { value: currentTheme === THEMES.DARK ? moonPath : sunPath } ]
         });
     }
-
 
           /**
    * @type {'small' | 'medium' | 'large'} How large should the button be?
