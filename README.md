@@ -6,7 +6,7 @@
     <br />
     <a href="https://sveltetoggles.onrender.com" disabled>View Demo Site</a>
     ·
-    <a href="mailto:damonwindsor@gmail.com?subject=IMPORTANT Svelte-Toggles Bug Report">Report Bug</a>
+    <a href="https://github.com/Team-GOATS/svelte-toggles-npm-package/issues">Report Bug</a>
     ·
 
   <br/>
