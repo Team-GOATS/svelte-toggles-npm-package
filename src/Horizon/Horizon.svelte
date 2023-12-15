@@ -60,7 +60,9 @@
      */
     export let size = 'medium';
   
-    export let fill = "#FACB26"
+    export let lightFill = "#24282E"
+
+    export let darkFill = "#FACB26" 
   
   </script>
   
@@ -81,12 +83,12 @@
                   class={["svelte-toggle", `svelte-toggle--${size}`, ].join(' ')}
                   >
                   
-                <path d="M0 90C0 88.3431 1.34315 87 3 87H97C98.6569 87 100 88.3431 100 90C100 91.6569 98.6569 93 97 93H3C1.34314 93 0 91.6569 0 90Z" fill={fill}/>
+                <path d="M0 90C0 88.3431 1.34315 87 3 87H97C98.6569 87 100 88.3431 100 90C100 91.6569 98.6569 93 97 93H3C1.34314 93 0 91.6569 0 90Z" fill={currentTheme === THEMES.LIGHT ? lightFill : darkFill}/>
 
                   <path 
                   class="sun"
                   d="M90 40C90 62.0914 72.0914 80 50 80C27.9086 80 10 62.0914 10 40C10 17.9086 27.9086 0 50 0C72.0914 0 90 17.9086 90 40Z" 
-                  fill={fill}/>
+                  fill={currentTheme === THEMES.LIGHT ? lightFill : darkFill}/>
               </svg>
           </button>
       </section> 

@@ -56,12 +56,14 @@
         });
     }
 
-          /**
+    /**
    * @type {'small' | 'medium' | 'large'} How large should the button be?
    */
   export let size = 'medium';
 
-  export let fill = "#FACB26"
+  export let lightFill = "#24282E"
+
+  export let darkFill = "#FACB26"
 
 </script>
 
@@ -73,19 +75,22 @@
         >
             <svg
                 id="darkMode" 
+                title="Toggle theme"
+                aria-label="Toggle theme"
                 width="100" 
                 height="100" 
                 viewBox="0 0 100 100" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
-                
                 class={["svelte-toggle", `svelte-toggle--${size}`, ].join(' ')}
                 >
                 
                 <path 
                 class="sun"
                 d="M100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0C77.6142 0 100 22.3858 100 50Z" 
-                fill={fill}/>
+                fill={currentTheme === THEMES.LIGHT ? lightFill : darkFill}
+
+                />
             </svg>
         </button>
     </section> 
@@ -116,4 +121,6 @@
       width: 35px;
       margin: 5px;
   }
+
+
 </style>

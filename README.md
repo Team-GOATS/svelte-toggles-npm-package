@@ -76,32 +76,43 @@ import Basic from 'svelte-toggles/src/Basic'
 ```
 # Properties
 
-### [+] size
+## [+] size
 
 __Change the size of the toggle__
 
 __Type:__ String
 
-You can select from; small, medium or large (Default: medium)
+You can select from; `small`, `medium` or `large` (Default: `medium`)
 
 _Example use below:_
 ```js
 <Basic size="small"/>
 ```
-### [+] fill
+## [+] Fill
 
-__Change the Colour of the Toggle__
+__Change the Colour of the Toggle according to the State__
 
 __Type:__ String
 
-You can select from; Any take HEX or RGBA code (Default: #FACB26)
+
+### [+] lightFill
+
+Colour of Toggle when **Light Value** is present
+
+### [+] darkFill
+
+Colour of Toggle when **NO Light Value** is present
+
+You can select from; Any take HEX or RGBA code 
+
+Default Light: `#FACB26` | Default Dark: `#FACB26`
 
 _Example use below:_
 ```js
-<Basic fill="#FFFFFF"/>
+<Basic lightFill="#ff0000" darkFill="#ff03f5"/>
 ```
 ```js
-<Basic fill="255, 255, 255"/>
+<Basic lightFill="255, 255, 255" darkFill="0, 0, 0"/>
 ```
 
 <br />

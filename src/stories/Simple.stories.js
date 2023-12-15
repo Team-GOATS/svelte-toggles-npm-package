@@ -8,9 +8,12 @@ export default {
         options: ['small', 'medium', 'large'],
         control: { type: 'radio'}
       },
-      fill: {
+      lightFill: {
         control: { type: 'color'}
-      }
+      },
+      darkFill: {
+        control: { type: 'color'}
+      },
       },
   };
 

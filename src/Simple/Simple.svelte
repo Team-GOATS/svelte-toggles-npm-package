@@ -62,7 +62,9 @@ const THEMES = {
 */
 export let size = 'medium';
 
-export let fill = "#FACB26"
+export let lightFill = "#24282E"
+
+export let darkFill = "#FACB26"
 </script>
 
 <main>
@@ -86,7 +88,7 @@ export let fill = "#FACB26"
                 fill-rule="evenodd" 
                 clip-rule="evenodd" 
                 d="M0 50C2.41411e-06 22.3858 22.3858 -2.41411e-06 50 0C77.6142 2.41411e-06 100 22.3858 100 50C100 77.6142 77.6142 100 50 100C22.3858 100 -2.41411e-06 77.6142 0 50ZM7 50C7 26.2518 26.2518 7 50 7L50 93C26.2518 93 7 73.7482 7 50Z" 
-                fill={fill}
+                fill={currentTheme === THEMES.LIGHT ? lightFill : darkFill}
             />
             </svg>
         </button>
