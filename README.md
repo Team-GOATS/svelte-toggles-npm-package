@@ -12,28 +12,34 @@
   <br/>
   <br/>
 
-   <span style="color:red"><strong> We've just released Version 2.0.0 </strong></span>- with this we have cut back all of our Prototypes & will now only be adding Toggles you can happily use on your projects
+   <span style="color:red"><strong> Fully Released </strong></span>
   <br />
   <br />
-  Team GOATS from Holmesglen Svelte Toggle Switches back-end functionality is done for you, no tedious research and bug fixing just for Light & Dark mode! 
+  Team GOATS from Holmesglen Svelte Toggle Switches functionality is done for you, no tedious research and bug fixing just for Light & Dark mode!
 
   <br />
   <br />
   <div style="display: flex" align="center">
-  <div style="width: 33%;">
+  <div style="width: 25%;">
   <p>Basic</p>
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDhxZzE4dXd1M2VmbW52emQ4bXZnZXdqdHY0aGZxenJqazVid2xhOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d0GKBjUK11NfpeXV2k/giphy.gif" style="margin: 2px">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDhxZzE4dXd1M2VmbW52emQ4bXZnZXdqdHY0aGZxenJqazVid2xhOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d0GKBjUK11NfpeXV2k/giphy.gif" style="margin: 1px">
   </div>
 
-  <div style="width: 33%;">
-    <p>Simple</p>
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenRyZjZ1bmdvYzR2NXF5M3RtazViYm95MXI1MXA0OTdvenRzdHpqNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pJ5jHRwItT5BPV38Ij/giphy.gif" style="margin: 2px">
-  </div>
-
-  <div style="width: 33%;">
+  <div style="width: 25%;">
     <p>Horizon</p>
-    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDc2bmtmcjZvc3lnajk2MHlkOGhtajQzcWNrbmtmdmJoN2hrZ3UzciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1h4hrHJNvhul1bXES3/giphy.gif" style="margin: 2px">
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDc2bmtmcjZvc3lnajk2MHlkOGhtajQzcWNrbmtmdmJoN2hrZ3UzciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1h4hrHJNvhul1bXES3/giphy.gif" style="margin: 1px">
   </div>
+
+  <div style="width: 25%;">
+    <p>Rays</p>
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGZzZWFjZjZjYmVqZ3Vxd3plZmd5YWlodDNxMTloZWoyejhvcTB1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9D7xN8s3rKHfLDlBve/giphy.gif" style="margin: 1px">
+  </div>
+
+  <div style="width: 25%;">
+    <p>Simple</p>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenRyZjZ1bmdvYzR2NXF5M3RtazViYm95MXI1MXA0OTdvenRzdHpqNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pJ5jHRwItT5BPV38Ij/giphy.gif" style="margin: 1px">
+  </div>
+
   </div>
   
   </div>
@@ -47,6 +53,7 @@
 -------------------------|--------------------------|---------------|
 |Basic      | svelte-toggles/src/Basic          | Sun Morphs into Crescent Moon  |
 |Horizon      | svelte-toggles/src/Horizon          | Sun falls behind Horizon  |
+|Rays      | svelte-toggles/src/Rays          | Sun w Rays morphs into Crescent Moon  |
 |Simple      | svelte-toggles/src/Simple          | Sun Morphs into Moon  |
 
 
@@ -105,7 +112,7 @@ Colour of Toggle when **NO Light Value** is present
 
 You can select from; Any take HEX or RGBA code 
 
-Default Light: `#FACB26` | Default Dark: `#FACB26`
+Default Light: `#24282E` | Default Dark: `#FACB26`
 
 _Example use below:_
 ```js
@@ -120,3 +127,8 @@ _Example use below:_
 
 ## Inspiration
 Inspired by the React Toggles library; <a href="https://www.toggles.dev"> toggles.dev</a>
+
+### Special Thanks
+Our Teachers throughout our Diploma; Daniel & Alex
+
+Waqas Ahmad on helping develop the "Rays" SVG Animation

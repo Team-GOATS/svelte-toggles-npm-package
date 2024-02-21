@@ -61,8 +61,8 @@
     export let size = 'medium';
   
     export let lightFill = "#24282E"
+    export let darkFill = "#FACB26"
 
-    export let darkFill = "#FACB26" 
   
   </script>
   
@@ -70,7 +70,6 @@
     
       <section>
           <button checked={currentTheme !== THEMES.LIGHT} on:click={toggleTheme}
-  
           >
               <svg
                   id="darkMode" 
@@ -103,20 +102,19 @@
           border: none;
       }
   
-  
-    .svelte-toggle--small {
+      .svelte-toggle--small {
       height: 15px;
       width: 15px;
       margin: 5px;
     }
     .svelte-toggle--medium {
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
         margin: 5px;
     }
     .svelte-toggle--large {
-        height: 35px;
-        width: 35px;
+        height: 45px;
+        width: 45px;
         margin: 5px;
     }
   </style>

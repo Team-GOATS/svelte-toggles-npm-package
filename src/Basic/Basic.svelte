@@ -60,10 +60,10 @@
    * @type {'small' | 'medium' | 'large'} How large should the button be?
    */
   export let size = 'medium';
-
+  
   export let lightFill = "#24282E"
-
   export let darkFill = "#FACB26"
+
 
 </script>
 
