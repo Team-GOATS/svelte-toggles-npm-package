@@ -39,27 +39,29 @@
     });
   
 
-      function onToggle(currentTheme) {
-        const animation = document.querySelector("#animation");
-        const rays = document.querySelector("#rays");
+    function onToggle(currentTheme) {
+    const animation = document.querySelector("#animation");
+    const rays = document.querySelector("#rays");
 
-        if (animation.classList.contains("sun") && currentTheme === THEMES.DARK) {
-          animation.classList.remove("sun");
-          animation.classList.add("moon");
-          rays.style.opacity = 0;
-          setTimeout(() => {
+    if (animation.classList.contains("sun") && currentTheme === THEMES.DARK) {
+        animation.classList.remove("sun");
+        animation.classList.add("moon");
+        rays.style.opacity = 0;
+        rays.style.transition = "opacity 0.375s ease-in-out, transform 0.2s ease-in-out";
+        setTimeout(() => {
             rays.style.transform = "scale(0.9)";
-          }, 400);
-          rays.classList.add("ray_hide");
-        } else {
-          animation.classList.remove("moon");
-          animation.classList.add("sun");
-          setTimeout(() => {
+        }, 400);
+        rays.classList.add("ray_hide");
+    } else {
+        animation.classList.remove("moon");
+        animation.classList.add("sun");
+        rays.style.transition = "opacity 0.375s ease-in-out, transform 0.2s ease-in-out";
+        setTimeout(() => {
             rays.style.opacity = 1;
             rays.style.transform = "scale(1)";
-          }, 350);
-        }
-      }
+        }, 350);
+    }
+}
 
       function onClick(){
         toggleTheme()

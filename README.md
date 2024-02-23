@@ -125,6 +125,11 @@ _Example use below:_
 <br />
 <br />
 
+## Known Bugs
+<ul>
+  <li>Rays Toggle - Double clicking toggle will cause the sun rays to be visible when they may not meant to be. <strong>ONLY affects animation</strong></li>
+</ul>
+
 ## Inspiration
 Inspired by the React Toggles library; <a href="https://www.toggles.dev"> toggles.dev</a>
 
